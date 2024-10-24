@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Indemnización</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Indemnización</h1>
+        <form id="indemnizacionForm">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="nit">NIT:</label>
+            <input type="text" id="nit" required>
+
+            <label for="dpi">DPI:</label>
+            <input type="text" id="dpi" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" required>
+
+            <label for="empresa">Empresa donde labora:</label>
+            <input type="text" id="empresa" required>
+
+            <label for="anios">Cantidad de años laborados:</label>
+            <input type="number" id="anios" required>
+
+            <label for="meses">Cantidad de meses laborados:</label>
+            <input type="number" id="meses" required>
+
+            <label for="sueldo">Sueldo promedio (salario):</label>
+            <input type="number" id="sueldo" required>
+
+            <label for="tipoIndemnizacion">Tipo de Indemnización:</label>
+            <select id="tipoIndemnizacion">
+                <option value="justificado">Justificado</option>
+                <option value="injustificado">Injustificado</option>
+            </select>
+
+            <button type="button" id="calcularBtn">Calcular</button>
+        </form>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
